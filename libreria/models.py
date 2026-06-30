@@ -7,5 +7,6 @@ class Libro(models.Model):
     autor = models.CharField(max_length=50)
     anio_publicacion = models.IntegerField()
     disponible = models.BooleanField(default=True)
+    isbn = models.CharField(max_length=13, null=True, blank=True) #campo nuevo
 
     
